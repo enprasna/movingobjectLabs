@@ -25,7 +25,7 @@
       <section class="intro" aria-labelledby="page-title">
         <p class="eyebrow">KINEMATICS / 01</p>
         <h1 id="page-title">The essentials of<br><em>moving things.</em></h1>
-        <p class="intro-copy">Three essential equations for constant acceleration. Enter what you know, and let the missing variable fall into place.</p>
+        <p class="intro-copy">Assign the known variables in order. The final variable in each equation is calculated from the values before it.</p>
       </section>
 
       <section class="formula-grid" aria-label="Motion formula calculators">
@@ -33,42 +33,46 @@
           <div class="card-topline"><span>01</span><span>Find final velocity</span></div>
           <div class="equation" aria-label="final velocity equals initial velocity plus acceleration times time"><strong>v</strong> = <span>u</span> + <span>a</span><span>t</span></div>
           <p class="formula-name">Final velocity</p>
-          <p class="formula-note">How fast is it moving at the end?</p>
+          <p class="formula-note">Choose any variable to calculate. The other three are inputs.</p>
           <form class="calculator" data-calculator="final-velocity" novalidate>
+            <label>Calculate <span class="symbol">result</span><select name="target"><option value="finalVelocity">Final velocity (v)</option><option value="initialVelocity">Initial velocity (u)</option><option value="acceleration">Acceleration (a)</option><option value="time">Time (t)</option></select></label>
             <label>Initial velocity <span class="symbol">u</span><div class="input-wrap"><input name="initialVelocity" type="number" step="any" placeholder="0"><span>m/s</span></div></label>
+            <label>Final velocity <span class="symbol">v</span><div class="input-wrap"><input name="finalVelocity" type="number" step="any" placeholder="0"><span>m/s</span></div></label>
             <label>Acceleration <span class="symbol">a</span><div class="input-wrap"><input name="acceleration" type="number" step="any" placeholder="0"><span>m/s2</span></div></label>
             <label>Time <span class="symbol">t</span><div class="input-wrap"><input name="time" type="number" min="0" step="any" placeholder="0"><span>s</span></div></label>
-            <button type="submit">Calculate <span aria-hidden="true">&#8594;</span></button>
+            
           </form>
-          <div class="result" aria-live="polite"><span>Result</span><strong>-- <small>m/s</small></strong></div>
+          <div class="result" aria-live="polite"><span>Computed variable <b>v</b></span><strong><span class="result-value">--</span> <small>m/s</small></strong></div>
         </article>
 
         <article class="formula-card card-distance">
           <div class="card-topline"><span>02</span><span>Find displacement</span></div>
           <div class="equation" aria-label="displacement equals initial velocity times time plus one half acceleration times time squared"><strong>s</strong> = <span>u</span><span>t</span> + 1/2<span>a</span><span>t</span><sup>2</sup></div>
           <p class="formula-name">Displacement</p>
-          <p class="formula-note">How far has it moved from the start?</p>
+          <p class="formula-note">Choose any variable to calculate. The other three are inputs.</p>
           <form class="calculator" data-calculator="displacement" novalidate>
+            <label>Calculate <span class="symbol">result</span><select name="target"><option value="displacement">Displacement (s)</option><option value="initialVelocity">Initial velocity (u)</option><option value="acceleration">Acceleration (a)</option><option value="time">Time (t)</option></select></label>
             <label>Initial velocity <span class="symbol">u</span><div class="input-wrap"><input name="initialVelocity" type="number" step="any" placeholder="0"><span>m/s</span></div></label>
+            <label>Displacement <span class="symbol">s</span><div class="input-wrap"><input name="displacement" type="number" step="any" placeholder="0"><span>m</span></div></label>
             <label>Acceleration <span class="symbol">a</span><div class="input-wrap"><input name="acceleration" type="number" step="any" placeholder="0"><span>m/s2</span></div></label>
             <label>Time <span class="symbol">t</span><div class="input-wrap"><input name="time" type="number" min="0" step="any" placeholder="0"><span>s</span></div></label>
-            <button type="submit">Calculate <span aria-hidden="true">&#8594;</span></button>
           </form>
-          <div class="result" aria-live="polite"><span>Result</span><strong>-- <small>m</small></strong></div>
+          <div class="result" aria-live="polite"><span>Computed variable <b>s</b></span><strong><span class="result-value">--</span> <small>m</small></strong></div>
         </article>
 
         <article class="formula-card card-time">
-          <div class="card-topline"><span>03</span><span>Find final velocity</span></div>
+          <div class="card-topline"><span>03</span><span>Assign variables</span></div>
           <div class="equation" aria-label="final velocity squared equals initial velocity squared plus two times acceleration times displacement"><strong>v</strong><sup>2</sup> = <span>u</span><sup>2</sup> + 2<span>a</span><span>s</span></div>
           <p class="formula-name">Final velocity</p>
-          <p class="formula-note">How fast is it after this displacement?</p>
+          <p class="formula-note">Choose any variable to calculate. The other three are inputs.</p>
           <form class="calculator" data-calculator="velocity-squared" novalidate>
+            <label>Calculate <span class="symbol">result</span><select name="target"><option value="finalVelocity">Final velocity (v)</option><option value="initialVelocity">Initial velocity (u)</option><option value="acceleration">Acceleration (a)</option><option value="displacement">Displacement (s)</option></select></label>
             <label>Initial velocity <span class="symbol">u</span><div class="input-wrap"><input name="initialVelocity" type="number" step="any" placeholder="0"><span>m/s</span></div></label>
+            <label>Final velocity <span class="symbol">v</span><div class="input-wrap"><input name="finalVelocity" type="number" step="any" placeholder="0"><span>m/s</span></div></label>
             <label>Acceleration <span class="symbol">a</span><div class="input-wrap"><input name="acceleration" type="number" step="any" placeholder="0"><span>m/s2</span></div></label>
             <label>Displacement <span class="symbol">s</span><div class="input-wrap"><input name="displacement" type="number" step="any" placeholder="0"><span>m</span></div></label>
-            <button type="submit">Calculate <span aria-hidden="true">&#8594;</span></button>
           </form>
-          <div class="result" aria-live="polite"><span>Result</span><strong>-- <small>m/s</small></strong></div>
+          <div class="result" aria-live="polite"><span>Computed variable <b>v</b></span><strong><span class="result-value">--</span> <small>m/s</small></strong></div>
         </article>
       </section>
 
